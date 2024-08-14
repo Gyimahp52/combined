@@ -1,0 +1,14 @@
+{
+    "name": "combined-project",
+    "version": "1.0.0",
+    "description": "A project to combine lazy loading and minification",
+    "scripts": {
+      "minify": "uglifyjs js/script.js -o js/script.min.js && cleancss -o css/styles.min.css css/styles.css && html-minifier-terser --input-dir . --output-dir . --collapse-whitespace --remove-comments --minify-css true --minify-js true --file-ext html"
+    },
+    "devDependencies": {
+      "uglify-js": "^3.14.3",
+      "clean-css-cli": "^5.3.2",
+      "html-minifier-terser": "^7.0.0"
+    }
+  }
+  
